@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="Aplicaciones-para-encriptar-archivos.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHALLENGE 1°</title>
+    <link rel="stylesheet" href="encripStyle.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Encriptador de Mensajes</h1>
+    </header>
+    <main>
+        <form>
+            <label>Encripta tu mensaje :</label>
+            <div class="Cajas-Texto">
+            <input type="text" id="texto" class="Mensaje" title="Mensaje"  placeholder="Ingrese el mensaje a encriptar..." required>
+            <input type="text" class="Menasaje-incriptado" id="resultado" title="Caja" disabled>
+            </div>
+            <div class="botones">
+                <input type="button" value="Copiar" class="btn-copy"/>
+            <input type="button" value="Encriptar" onclick="Encriptar()" class="btn-inc"/>
+            <input type="button" value="Desincriptar" class="btn-des"/>
+            </div>
+        </form>
+    </main>
+</body>
+<script type="text/javascript" src="encriptador.js"></script>
+</html>
