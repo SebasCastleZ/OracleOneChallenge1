@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="Aplicaciones-para-encriptar-archivos.jpg">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="encripStyle.css">
+<script type="text/javascript" src="encriptador.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHALLENGE 1°</title>
-    <link rel="stylesheet" href="encripStyle.css">
 </head>
 <body>
     <header id="header">
@@ -15,16 +17,22 @@
         <form>
             <label>Encripta tu mensaje :</label>
             <div class="Cajas-Texto">
-            <input type="text" id="texto" class="Mensaje" title="Mensaje"  placeholder="Ingrese el mensaje a encriptar..." required>
+                <div class="caja-Mensaje">
+            <input type="text" id="texto"  class="Mensaje"title="Mensaje"  placeholder="Ingrese el mensaje a encriptar..." required>
+                </div>
+                <div class="caja-Incriptada">
             <input type="text" class="Menasaje-incriptado" id="resultado" title="Caja" disabled>
+                </div>
             </div>
             <div class="botones">
-                <input type="button" value="Copiar" class="btn-copy"/>
             <input type="button" value="Encriptar" onclick="Encriptar()" class="btn-inc"/>
-            <input type="button" value="Desincriptar" class="btn-des"/>
+            <input type="button" value="Copiar" class="btn-copy" onclick="Copiar()" />
+            <input type="button" value="Desincriptar" class="btn-des" onclick="Desinciptar()" />
             </div>
         </form>
     </main>
 </body>
-<script type="text/javascript" src="encriptador.js"></script>
+<footer class="pie">
+    <p>&copy TODOS LOS DERECHOS RESERVADOS </p>
+</footer>
 </html>

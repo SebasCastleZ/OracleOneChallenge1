@@ -1,47 +1,68 @@
 body{
-
-    background-color: rgb(74, 230, 175);
+    background-image: url('encriptador.png');
+    background-size: cover;
     margin: 0;
     padding: 0;
     font-family: 'Arial';
+}
+form{
+    background: linear-gradient( rgba(255, 255, 255, 0),rgb(180, 180, 180));
 
 }
-/*      TITULO      */
-label{
-    font-style: initial;
-    font-size: 35px;
-    color:#0482ff;
-    display: block;
+/* Header */
+header{
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
     font-family: 'Arial';
-    margin: 24px;
-    }
+    font-variant: small-caps;
+}
+/*      TITULO      */
 h1{
     text-transform: uppercase;
     text-align: center;
     font-style: initial;
     font-size: 35px;
-    color:linear-gradient(90deg, rgba(4, 130, 255, 0.8) 0%, rgba(237, 17, 17, 0) 100%);
+    color:green;
+    font-weight: bold;
     font-family: 'Arial';
-    
+    box-shadow: 10px/*HORIXONTAL*/ 10px/*VERTICAL*/ 13px/*DIFUMINADO*/ #000000/*SE PUEDE COLOCAR MAS SOMBRAS*/;
 }
-/*      CJA DE MENSAJES     */
+/*      SUBTITULO      */
+label{
+    font-size: 35px;
+    color:#0080ff;
+    display: block;
+    font-family: 'Arial';
+    margin: 24px;
+    }
+
+/*      CAJA DE MENSAJES     */
 .Cajas-Texto{
     text-align: center;
-    display: inline-block;
     justify-content: center;
-    align-items: center;
-    padding: 4%;
+    width: 95%;
+}
+.caja-Mensaje{
+    height: 450px;
+    display: inline-block;
+}
+.caja-Incriptada{
+    height: 450px;
+    margin-left: 10%;
+    display: inline-block;
 }
 /*      MENSAJE A ENCRIPTAR            */
 .Mensaje{
     font-size: 20px;
     font-family: 'Arial';
     text-align: center;
-    margin: 20px;
     width: 340px;
-    height: 400px;
+    height: 450px;
     border-radius: 7px;
-    border: 2px solid #0482ff;
+    border: 2px solid #0e6c00;
     display: inline-block;
 }
 
@@ -54,14 +75,41 @@ h1{
     font-size: 20px;
     font-family: 'Arial';
     text-align: center;
-    margin: 20px;
     width: 340px;
-    height: 400px;
+    height: 450px;
     border-radius: 7px;
     border: 2px solid #0482ff;
     display: inline-block;
 }
+@media (max-width: 748px) {
+    .Mensaje{
+        font-size: 16px;
+        width: 240px;
+        height: 350px;
+        margin: auto;
+        float: inline-end;
+    }
 
+    .Menasaje-incriptado{
+        width: 240px;
+        height: 350px;
+        margin: auto;
+        margin-right: 8%;
+        float: inline-end;
+    }
+    .Cajas-Texto{
+        margin: auto;
+        margin-left: -1%;
+        padding: auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media (min-width: 348px){
+    
+
+}
 /*      BOTONES     */
 .botones{
     text-align: center;
@@ -88,7 +136,9 @@ border-radius: 7px;
     align-content: center;
 }
 .btn-inc:hover{
-    transition: .2s all ease-in-out;
+    
+    transform: scale(1.1);
+    transition: .3s all ease-in-out;
     border: #334a64 2px solid ;
     background-color: #0056b3;
     cursor: pointer;
@@ -102,8 +152,10 @@ border-radius: 7px;
     display: inline;
     font-variant: small-caps;
 }
+
 .btn-des:hover{
-    transition: .2s all ease-in-out;
+    transform: scale(1.1);
+    transition: .3s all ease-in-out;
     border: #905a13 2px solid ;
     background-color: #bbb101;
     cursor: pointer;
@@ -120,8 +172,19 @@ border-radius: 7px;
     font-variant: small-caps;
 }
 .btn-copy:hover{
-    transition: .2s all ease-in-out;
+    transform: scale(1.1);
+    transition: .3s all ease-in-out;
     border: #008310 2px solid ;
     background-color: #0eb22f;
     cursor: pointer;
+}
+/*      FOOTER      */
+footer{
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-variant: small-caps;
 }
